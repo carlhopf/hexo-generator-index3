@@ -2,6 +2,7 @@
 logs
 *.log
 npm-debug.log*
+npm-lock.json
 
 # Runtime data
 pids

@@ -1,8 +1,8 @@
 ## Introduction
 
-Filtered index generator for [Hexo]. Based on official
-index generator and [hexo-generator-index2]. Support filtering based on
-post front-matter. Also added support for multiple index pages,
+Filtered index generator for [Hexo]. Based on [hexo-generator-index2]. 
+
+Filtering based on post front-matter. Also supports multiple index pages,
 each with custom filtering etc.
 
 ## Installation
@@ -22,12 +22,12 @@ index_generator:
     layout:
       - index
     include:
-      - key type index
+      - key types index
   blog:
     per_page: 0
     order_by: -date
     include:
-      - key type blog
+      - key types blog
   apps:
     per_page: 0
     order_by: -date
@@ -47,6 +47,19 @@ Include/exclude option is `attribute value` format, available attribute are:
 - path: Post source path
 - key: Custom front-matter key/value
 - layout: Layout values, defaults to ['index', 'archive'].
+
+
+## front-matter
+
+Example front-matter.
+
+```yaml
+title: Lorem!
+types:
+- index
+- innen
+category: ipsum
+```
 
 
 ## License
